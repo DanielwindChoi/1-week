@@ -1,10 +1,9 @@
-0 <= n <= 10000
-test_count = 
+t = int(input())
 
-n = map(int, input().split())
-if n % 2 != 0:
-    sum += n
-else :
-    pass
-
-print('#t \ sum')
+for test in range(1, t+1):
+    n = map(int, input().split())
+    sum = 0
+    for i in n:
+        if i % 2 != 0:
+            sum += i
+    print("#"+str(' '), str(sum))
